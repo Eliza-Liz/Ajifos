@@ -258,7 +258,7 @@ button{
     display: none;
 }
 
-@media (max-width: 394px){
+@media (max-width: 413px){
 
     /* Esconde a barra fora da tela */
     .barra{
@@ -362,5 +362,4 @@ button{
         width: 360px;
         margin-left: 10px;
     }
-
 }
