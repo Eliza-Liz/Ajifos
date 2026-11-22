@@ -337,7 +337,7 @@ button{
     }
 
     section{
-        width: 370px;
+        width: 350px;
         height: 1000px;
         box-sizing: border-box;
         margin-left: 10px;
@@ -370,7 +370,7 @@ button{
     }
 
     section h2::after{
-        width: 340px;
+        width: 320px;
         margin-left: 10px;
     }
 }
