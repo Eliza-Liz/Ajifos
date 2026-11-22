@@ -370,7 +370,7 @@ button{
     }
 
     section h2::after{
-        width: 320px;
+        width: 340px;
         margin-left: 10px;
     }
 }
