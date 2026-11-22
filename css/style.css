@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "Playfair-Display-Bold";
+    src: url(../fontes/PlayfairDisplay-Bold.ttf)
+    format(truetype);
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair-Display-Regular";
+    src: url(../fontes/PlayfairDisplay-Regular.ttf)
+    format(truetype);
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fontes/Inter_18pt-Regular.ttf)
+    format(truetype);
+    font-weight: 400;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e4efe8;
+    color: #4a6b62;
+}
+
+section{
+    display: inline-block;
+    width: 48%;
+    vertical-align: center;
+    margin: 100px auto;
+}
+
+h1{
+    font-size: 148px;
+    font-family: "Playfair-Display-Bold";
+    text-align: center;
+    
+
+}
+
+h2{
+    font-size: 17px;
+    font-family: "Playfair-Display-Regular";
+    width: 250px;
+    height: 30px;
+    border: #12312b 2px solid;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 36px;
+    margin: 0px auto 20px;
+    
+    
+}
+
+p{
+    font-size: 16px;
+    font-family: "Inter";
+    text-align: center;
+    margin: 5px auto;
+
+}
+
+
+
+a{
+    font-family: "Inter";
+    font-size: 17px;
+    color: #12312b;
+    text-decoration: none;
+    width: 500px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    padding-left: 20px;
+    border-radius: 36px;
+    border: #12312b 3px solid;
+    margin: 10px auto;
+
+}
+
+a::before {
+  content: "✦";
+  display: inline-block;
+  margin-right: 6px;
+  color: #12312b;
+}
+
+#animes {
+    background-color: #f2c14e;
+    text-align: left;
+}
+
+#jogos {
+    background-color: #8fd8e8;
+    text-align: left;
+}
+
+#series {
+    background-color: #a8e6a3;
+    text-align: left;
+}
+
+#filmes {
+    background-color: #e8837c;
+    text-align: left;
+}
+
+#livros {
+    background-color: #e0b3f0;
+    text-align: left;
+}
+
+@media(max-width: 394px){
+    section{
+        display: inline;
+    }
+
+    h1{
+        font-size: 90px;
+        margin-top: 80px;
+    }
+
+    p{
+        font-size: 13px;
+        width: 290px;
+    }
+
+    a{
+        width: 280px;
+        margin: 15px auto;
+    }
+}
