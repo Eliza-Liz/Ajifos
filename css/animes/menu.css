@@ -126,7 +126,12 @@ a{
     padding: 20px;
     box-sizing: border-box;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    z-index: 1000;
 }
+
 
 nav h2{
     color: #12312b;
@@ -247,4 +252,48 @@ section h2::after{
     background-color: orange;
     margin-top: 10x;
     margin-left: 25px;
+}
+
+button{
+    display: none;
+}
+
+@media (max-width: 768px){
+
+    /* Esconde a barra fora da tela */
+    .barra{
+        transform: translateX(-100%);
+    }
+
+    /* Mostra a barra quando ativada */
+    .barra.ativa{
+        transform: translateX(0);
+    }
+
+    /* Botão para abrir */
+    .bnt-abrir{
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1001;
+        background-color: #12312b;
+        color: white;
+        border: 2px solid #12312b;
+        border-radius: 8px;
+        padding: 8px 15px;
+        cursor: pointer;
+    }
+
+    /* Botão para fechar */
+    .barra .bnt-fechar{
+        display: block;
+        border: 2px solid #12312b;
+        background-color: #f2c14e;
+        color: #12312b;
+        width: 100px;
+        height: 30px;
+        margin: 10px auto;
+        cursor: pointer;
+    }
 }
