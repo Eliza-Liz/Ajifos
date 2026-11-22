@@ -258,7 +258,7 @@ button{
     display: none;
 }
 
-@media (max-width: 500px){
+@media (max-width: 430px){
 
     /* Esconde a barra fora da tela */
     .barra{
@@ -286,6 +286,11 @@ button{
         margin-top: 12px;
     }
 
+    header{
+        width: 430px;
+        position: relative;
+    }
+
     header h2{
         font-size: 15px;
         margin-left: 100px;
@@ -298,6 +303,7 @@ button{
     header p{
         font-size: 13px;
         margin-top: 32px;
+        margin-right: 0px;
         text-align: left;
         width: 120px;
     }
@@ -307,8 +313,9 @@ button{
         width: 100px;
         height: 20px;
         line-height: 20px;
-        margin: 65px 5px 0 -270px;
+        margin: 65px 5px 0px 10px;
         border-radius: 10px;
+        position: absolute;
     }
 
     header a{
@@ -317,7 +324,8 @@ button{
         height: 25px;
         line-height: 25px;
         border-radius: 10px;
-        margin: 65px 0 0;
+        margin: 65px 0 0 120px;
+        position: absolute;
     }
 
     nav h2{
@@ -330,9 +338,12 @@ button{
     }
 
     section{
-        width: 380px;
+        width: 400px;
+        height: 1000px;
+        box-sizing: border-box;
         margin-left: 10px;
         margin-top: 20px;
+        margin-right: 0;
     }
 
     section h3{
@@ -344,9 +355,10 @@ button{
 
     section h1{
         font-size: 30px;
-        text-align:left;
+        text-align: left;
         margin-left: 10px;
         display: block;
+        width: 200px;
         margin-bottom: -15px;
     }
 
@@ -359,7 +371,7 @@ button{
     }
 
     section h2::after{
-        width: 360px;
+        width: 370px;
         margin-left: 10px;
     }
 }
