@@ -248,3 +248,39 @@ section h2::after{
     margin-top: 10x;
     margin-left: 25px;
 }
+
+.sidebar-toggle {
+  display: none;
+}
+
+.btn-menu {
+  display: none;
+}
+
+.sidebar {
+  width: 240px;
+}
+
+/* Layout mobile (telas até 768px) */
+@media (max-width: 394px) {
+  .btn-menu {
+    display: inline-block;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%); /* Esconde fora da tela */
+    transition: transform 0.25s ease;
+    z-index: 100;
+  }
+
+  /* Exibe a barra quando o botão/checkbox é ativado */
+  .sidebar-toggle:checked ~ .sidebar {
+    transform: translateX(0);
+  }
+}
